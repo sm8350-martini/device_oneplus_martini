@@ -6,8 +6,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_martini.mk
-
-COMMON_LUNCH_CHOICES := \
-    aosp_martini-user \
-    aosp_martini-userdebug \
-    aosp_martini-eng
