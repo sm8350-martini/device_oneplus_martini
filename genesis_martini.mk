@@ -11,16 +11,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from martini device
 $(call inherit-product, device/oneplus/martini/device.mk)
 
-# Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Genesis stuff.
+$(call inherit-product, vendor/genesis/config/common_full_phone.mk)
 
-PRODUCT_NAME := aosp_martini
+PRODUCT_NAME := genesis_martini
 PRODUCT_DEVICE := martini
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := MT2111
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+
+GENESIS_MAINTAINER := fus0g
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="MT2111_IND-user 14 UKQ1.230924.001 R.176a8b9_a573-63a5 release-keys" \

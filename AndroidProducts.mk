@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_martini.mk
+    $(LOCAL_DIR)/genesis_martini.mk
