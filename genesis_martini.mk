@@ -24,6 +24,8 @@ PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 GENESIS_MAINTAINER := fus0g
 
+PRODUCT_NO_CAMERA := true
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="MT2111_IND-user 14 UKQ1.230924.001 R.176a8b9_a573-63a5 release-keys" \
     BuildFingerprint=OnePlus/MT2111_IND/OP5155L1:14/UKQ1.230924.001/R.176a8b9_a573-63a5:user/release-keys \
