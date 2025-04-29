@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021-2023 The LineageOS Project
+# Copyright (C) 2021-2025 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -45,6 +45,9 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.sys.brightness.low.gamma=true
+
+# Lineage Health
+$(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/oplus_chg/battery/mmi_charging_enable)
 
 # NFC
 PRODUCT_PACKAGES += \
