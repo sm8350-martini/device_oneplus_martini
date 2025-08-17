@@ -11,18 +11,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from martini device
 $(call inherit-product, device/oneplus/martini/device.mk)
 
-# Inherit some common Genesis stuff.
-$(call inherit-product, vendor/genesis/config/common_full_phone.mk)
+# Inherit some common los stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := genesis_martini
+PRODUCT_NAME := lineage_martini
 PRODUCT_DEVICE := martini
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := MT2111
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
-
-GENESIS_MAINTAINER := fus0g
 
 PRODUCT_NO_CAMERA := true
 
